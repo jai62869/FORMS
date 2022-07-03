@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="formval.css">
+    <script>document.addEventListener("DOMContentLoaded", () => {
+        alert("DOM ready!");
+      });</script>
+    <script src="formval.js"></script>
+</head>
+
+<body>
+    
+    
+    <h1>Welcome to the best form on Internet!</h1>
+    <form id="form">
+        <div class="formdesign" >
+            Name:
+             <input id="name" type="text" placeholder="Enter your Name" required><b><span class="formerror"> </span></b> 
+        </div>
+
+        <div class="formdesign" >
+            Email: 
+            <input id="email" placeholder="Enter your Email" required><b><span class="formerror"> </span></b> 
+        </div>
+
+        <div class="formdesign" >
+            Phone: 
+            <input id="phone" placeholder="Enter your mobile number" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" >
+            Password:
+             <input id="pass" type="password"  required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password: 
+         <input type="password"  required><b><span class="formerror"></span></b> 
+        </div>
+
+        <br>
+        <label for="101">
+            Gender: <input type="radio" value="Male" name="class" id="101">Male
+        </label>
+        <br>
+        <label for="102">
+            <input type="radio" value="female" name="class" id="102">female
+        </label>
+        <br>
+        <br>
+        <h4>Select your programming language</h4>
+        <label for="python">
+            <input type="checkbox" name="course[]" value="python" id="103">pyhton
+
+        </label>
+        <br>
+        <label for="c++">
+            <input type="checkbox" name="course[]" value="c++" id="104">c++
+
+        </label>
+        <br>
+        <label for="java">
+            <input type="checkbox" name="course[]" value="java" id="105">java
+
+        </label>
+        <br>
+        <label for="c">
+            <input type="checkbox" name="course[]" value="c"  id="106">c
+
+        </label>
+
+        <label>
+            <h4>select your city</h4>
+            <select name="city" id="108">
+                <option value="Delhi">Delhi</option>
+                <option value="Alld">Alld</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Lucknow">Lucknow</option>
+            </select>
+        </label>
+        <br><br><br><br><br>
+       
+
+        <input type ="submit" value ="submit">
+        
+    </form>
+
+    <script src="formval.js"></script>
+</body>
+
+</html>
